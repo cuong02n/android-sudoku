@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/back"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+       />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/pick_difficulty"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp250"
+            android:layout_height="@dimen/dp45"
+            android:weightSum="5">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageButton
+                android:id="@+id/buttonnewgameback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/buttoninfonewgame"
+                android:backgroundTint="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="4 x 4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20" />
+
+            <ImageButton
+                android:id="@+id/buttonnewgamenext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/next" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10" />
+
+        <Button
+            android:id="@+id/buttonnewgame1"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/veryeasy"
+            android:text="@string/veryeasy"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonnewgame2"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/easy"
+            android:text="@string/easy"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonnewgame3"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/medium"
+            android:text="@string/medium"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonnewgame4"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/hard"
+            android:text="@string/hard"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonnewgame5"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/veryhard"
+            android:text="@string/veryhard"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonnewgame6"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/expert"
+            android:text="@string/expert"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonnewgame7"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/dp45"
+            android:backgroundTint="@color/impossible"
+            android:text="@string/impossible"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

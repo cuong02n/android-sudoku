@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cuong02n.sudoku2905.Highscore">
+    <ImageButton
+        android:backgroundTint="@color/black"
+        android:id="@+id/back"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:background="@drawable/back"
+       />
+    <LinearLayout
+
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:background="@drawable/custom_button_white_tint">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"/>
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/buttonhighscoreback"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:backgroundTint="@color/white"
+            android:id="@+id/buttoninfohighscore"
+            android:text="9 x 9"
+            android:gravity="center"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"/>
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/buttonhighscorenext"
+            android:src="@drawable/next"
+            android:scaleType="fitCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/highscoreveryeasy"
+                    android:background="@drawable/veryeasy"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160" />
+                <ImageButton
+                    android:id="@+id/highscoreeasy"
+                    android:background="@drawable/easy"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp40">
+
+                <ImageButton
+                    android:id="@+id/highscoremedium"
+                    android:background="@drawable/medium"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160" />
+                <ImageButton
+                    android:id="@+id/highscorehard"
+                    android:background="@drawable/hard"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp40">
+                <ImageButton
+                    android:id="@+id/highscoreveryhard"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160"
+                    android:background="@drawable/veryhard"/>
+                <ImageButton
+                    android:id="@+id/highscoreexpert"
+                    android:background="@drawable/expert"
+                    android:layout_marginStart="@dimen/dp40"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp40">
+
+                <ImageButton
+                    android:id="@+id/highscoreimpossible"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp160"
+                    android:layout_gravity="center"
+                    android:background="@drawable/impossible"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

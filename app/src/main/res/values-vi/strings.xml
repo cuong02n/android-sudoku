@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pick_difficulty"><b><u>CHỌN ĐỘ KHÓ </u></b></string>
+    <string name="solve_sudoku">GIẢI SUDOKU</string>
+    <string name="about_us_nprivacy_policy">VỀ CHÚNG TÔI\nCHÍNH SÁCH BẢO MẬT</string>
+    <string name="privacy_amp_policy">Chính sách bảo mật</string>
+    <string name="i_agree">Tôi đồng ý</string>
+    <string name="featureisunderdevelopment">Chức năng đang phát triển</string>
+    <string name="newgamefirst_thencontinue">Phải chơi mới đã mới tiếp tục được chứ !!!</string>
+    <string name="confirm_exit"><b>Nhấn 1 lần nữa để thoát</b></string>
+    <string name="no_note_from17">Bắt đầu từ bảng chơi 17 , chúng tôi không hỗ trợ chức năng này</string>
+    <string name="setting">Cài đặt</string>
+    <string name="textsize">Cỡ chữ</string>
+    <string name="Default">Mặc định</string>
+    <string name="textsize2">Cỡ chữ (Nút bấm)</string>
+    <string name="developer">Nhà phát triển :</string>
+    <string name="textcolor">Màu chữ</string>
+    <string name="textcolor2">Màu chữ (Nút bấm)</string>
+    <string name="textbackground">nền ô chữ</string>
+    <string name="textbackground_button">Nền ( nút bấm)</string>
+</resources>

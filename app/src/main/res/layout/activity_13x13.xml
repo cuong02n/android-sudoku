@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:adSize="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/back"
+        ads:layout_constraintBottom_toTopOf="@+id/top2_"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintVertical_bias="0.5" />
+
+    <RelativeLayout
+        android:id="@+id/top1_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp10"
+            android:background="@drawable/setting" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp25"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_toLeftOf="@+id/setting"
+            android:gravity="center_vertical|end"
+            android:text="00:00"
+            android:textColor="@color/veryhard"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/infohardmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_toStartOf="@+id/time"
+            android:text="@string/veryeasy"
+            android:textSize="@dimen/sp12" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/top2_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp320"
+        android:layout_below="@id/top1_"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp10"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/top1_"
+        ads:layout_constraintVertical_bias="0.05">
+
+        <RelativeLayout
+            android:id="@+id/layoutoto"
+            android:layout_width="@dimen/dp312"
+            android:layout_height="@dimen/dp312"
+            android:layout_gravity="center">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp312"
+            android:layout_height="@dimen/dp312"
+            android:layout_gravity="center"
+            android:src="@drawable/sudoku13x13" />
+
+        <RelativeLayout
+            android:id="@+id/layoutocon"
+            android:layout_width="@dimen/dp312"
+            android:layout_height="@dimen/dp312"
+            android:layout_gravity="center">
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/top3_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top2_"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        ads:layout_constraintBottom_toTopOf="@+id/adView"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.5"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/top2_"
+        ads:layout_constraintVertical_bias="0.23">
+
+        <ImageButton
+            android:id="@+id/undo_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:background="@drawable/background_color_custom_button"
+            android:scaleType="fitXY"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/undo" />
+
+        <ImageButton
+            android:id="@+id/remove_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/background_color_custom_button"
+            android:scaleType="fitXY"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/eraser" />
+
+        <ImageButton
+            android:id="@+id/clear_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/background_color_custom_button"
+            android:padding="@dimen/dp5"
+            android:scaleType="fitXY"
+            android:src="@drawable/clear" />
+
+        <ImageButton
+            android:id="@+id/hint_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/background_color_custom_button"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingTop="@dimen/dp5"
+            android:paddingEnd="@dimen/dp3"
+            android:paddingStart="@dimen/dp3"
+            android:scaleType="fitXY"
+            android:src="@drawable/hint3" />
+
+        <ImageButton
+            android:id="@+id/note_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/background_color_custom_button"
+            android:padding="@dimen/dp5"
+            android:scaleType="fitXY"
+            android:src="@drawable/noteoff" />
+
+        <ImageButton
+            android:id="@+id/noteall_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/background_color_custom_button"
+            android:padding="@dimen/dp5"
+            android:scaleType="fitXY"
+            android:src="@drawable/noteall" />
+
+        <ImageButton
+            android:id="@+id/clearnote_"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/background_color_custom_button"
+            android:padding="@dimen/dp5"
+            android:scaleType="fitXY"
+            android:src="@drawable/clearnote" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        ads:layout_constraintBottom_toTopOf="@+id/adView"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/top3_"
+        ads:layout_constraintVertical_bias="0.4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button2_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button3_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button4_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button5_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button6_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button7_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5">
+
+
+            <Button
+                android:id="@+id/button8_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button9_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button10_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button11_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+
+            <Button
+                android:id="@+id/button12_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+            <Button
+                android:id="@+id/button13_"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp5"
+                android:background="@drawable/background_color_custom_button"
+                android:gravity="center"
+                android:text="D"
+                android:textColor="@color/veryeasy"
+                android:textSize="@dimen/sp10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

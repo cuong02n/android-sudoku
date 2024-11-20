@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Highscore"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/highscore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting" />
+
+    <ImageButton
+        android:id="@+id/Exit"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Highscore" />
+    <ImageButton
+        android:id="@+id/Aboutus_privacy"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@drawable/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/market"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@drawable/market"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Aboutus_privacy" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/dp10"
+        android:src="@drawable/example"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/market"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Highscore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <Button
+        android:id="@+id/Newgame"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp60"
+        android:text="New Game"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <Button
+        android:id="@+id/Continue"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp40"
+        android:text="CONTINUE"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Newgame"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <Button
+        android:id="@+id/Solve"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp30"
+        android:text="Solve"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Continue"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:textColor="#C9504B4B"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sudoku"
+        android:textSize="@dimen/sp55"
+        app:layout_constraintBottom_toTopOf="@+id/Newgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

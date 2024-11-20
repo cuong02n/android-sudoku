@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="#DFD2D2"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp15" />
+
+
+    <TextView
+        android:id="@+id/txttmp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="#DFD2D2"
+        android:gravity="center"
+        android:text="9x9 Very easy"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp25" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:background="@drawable/back" />
+
+    <Space
+        android:id="@+id/spaczzzzzzz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txttmp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spaczzzzzzz"
+        android:layout_marginBottom="@dimen/dp50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp55"
+                    android:src="@drawable/goldmedal" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp55"
+                    android:src="@drawable/slivermedal" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp45"
+                    android:src="@drawable/bronzemedal" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons4" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons5" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons6" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons7" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons8" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons9" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons10" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons11" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons12" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons13" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons14" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons15" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons16" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore17"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons17" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons18" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore19"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons19" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medalHighscore20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:src="@drawable/icons20" />
+
+                <TextView
+                    android:id="@+id/playernameHighscore20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="- - - - -"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/timeHighscore20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--:--:--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:background="@drawable/back"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textAlignment="center"
+        android:textSize="@dimen/sp30"
+        android:id="@+id/textsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/default_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp40"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/sp20"
+        android:text="@string/Default"
+        android:background="@color/hard"/>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp250"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textsetting">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp250"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/dp200"
+                    android:layout_height="match_parent"
+                    android:text="@string/textsize"
+                    android:textSize="@dimen/sp18"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/dp200"
+                    android:layout_height="match_parent"
+                    android:text="@string/textsize2"
+                    android:textSize="@dimen/sp18"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/dp200"
+                    android:layout_height="match_parent"
+                    android:text="@string/textcolor"
+                    android:textSize="@dimen/sp18"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/dp200"
+                    android:layout_height="match_parent"
+                    android:text="@string/textcolor2"
+                    android:textSize="@dimen/sp18"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxWidth="@dimen/dp200"
+                    android:text="@string/textbackground"
+                    android:textSize="@dimen/sp18" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxWidth="@dimen/dp200"
+                    android:text="@string/textbackground_button"
+                    android:textSize="@dimen/sp18" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

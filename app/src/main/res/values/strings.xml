@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translatable="false">SUDOKU</string>
+    <string name="veryeasy" translatable="false"><b><u>VERY EASY</u></b></string>
+    <string name="easy" translatable="false"><b><u>EASY</u></b></string>
+    <string name="medium" translatable="false"><b><u>MEDIUM</u></b></string>
+    <string name="hard" translatable="false"><b><u>HARD</u></b></string>
+    <string name="veryhard" translatable="false"><b><u>VERY HARD</u></b></string>
+    <string name="expert" translatable="false"><b><u>EXPERT</u></b></string>
+    <string name="impossible" translatable="false"><b><u>IMPOSSIBLE</u></b></string>
+    <string name="pick_difficulty"><b><u>PICK DIFFICULTY </u></b></string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-5827909942405240/1856265709</string>
+    <string name="solve_sudoku">SOLVE SUDOKU</string>
+    <string name="about_us_nprivacy_policy">ABOUT US\nPRIVACY POLICY</string>
+    <string name="email" translatable="false">Email : cuong02n@gmail.com</string>
+    <string name="privacy_amp_policy">Privacy policy</string>
+    <string name="i_agree">I Agree</string>
+    <string name="featureisunderdevelopment">This feature is under development</string>
+    <string name="newgamefirst_thencontinue">"NEW GAME FIRST, THEN CONTINUE !!!"</string>
+    <string name="adrewarded" translatable="false">\"ca-app-pub-5827909942405240/4434163283"</string>
+    <string name="sudoku" translatable="false"><i><b>SUDOKU</b></i></string>
+    <string name="confirm_exit"><b>Press Again to exit</b></string>
+    <string name="no_note_from17">From size  17, We don\'t support \"NOTE\" feature</string>
+    <string name="setting">Setting</string>
+    <string name="textsize">TextSize</string>
+    <string name="Default">DEFAULT</string>
+    <string name="textsize2">TextSize(Button)</string>
+    <string name="developer">Developer :</string>
+    <string name="textcolor">Text Color</string>
+    <string name="textcolor2">Text Color(Button)</string>
+    <string name="textbackground">Text Background</string>
+    <string name="textbackground_button">Text BG(Button)</string>
+</resources>
